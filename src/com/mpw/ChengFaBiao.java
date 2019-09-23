@@ -7,7 +7,7 @@ package com.mpw;
  * @version 2019年9月19日 下午11:54:18
  */
 public class ChengFaBiao {
-
+	
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
 		int i, j;
