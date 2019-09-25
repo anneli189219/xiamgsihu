@@ -9,8 +9,6 @@ package com.student;
 public class Main {
 	
 	public Main() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public static void main(String[] args) {
@@ -25,9 +23,16 @@ public class Main {
 		stdList._add(zhangsan2);
 		stdList._add(zhangsan3);
 		
+		Student s1 = new Student();
+		System.out.println(s1.c);
+		Student s2 = new Student();
+		System.out.println(s2.c);
+		
 		stdList.print();
 		stdList.query("ing");
 		stdList.fail();
+		
+
 	}
 	
 }

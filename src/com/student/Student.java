@@ -10,7 +10,16 @@ public class Student {
 	private int English;
 	private int HighNumber;
 	private int Sport;
+	public static int c;
 	
+	
+	
+	public Student() {
+		super();
+		c++;
+		// TODO Auto-generated constructor stub
+	}
+
 	/**
 	 * 构造方法 初始化信息
 	 * @param Sno 学号
