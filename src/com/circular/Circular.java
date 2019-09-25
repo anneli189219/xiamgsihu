@@ -2,8 +2,9 @@ package com.circular;
 
 /**
  * 圆形类
+ * 
  * @author anneli
- * @date 2019年9月25日 下午5:19:43 
+ * @date 2019年9月25日 下午5:19:43
  *
  */
 public class Circular extends Graphical {
@@ -11,7 +12,7 @@ public class Circular extends Graphical {
 
 	public Circular() {
 	}
-	
+
 	public double getRadius() {
 		return Radius;
 	}
@@ -20,19 +21,22 @@ public class Circular extends Graphical {
 		Radius = radius;
 	}
 
-	public Circular(String color,String isFill,double radius) {
-		super(color,isFill);
-		this.Radius=radius;
+	public Circular(String color, String isFill, double radius) {
+		super(color, isFill);
+		this.Radius = radius;
 	}
-	
-	@Override public void getFigureArea() {
-		System.out.println("圆形面积："+Radius*Radius*Math.PI);
+
+	@Override
+	public double getFigureArea() {
+		System.out.println("圆形面积：" + Radius * Radius * Math.PI);
+		return Radius * Radius * Math.PI;
 
 	}
 
 	@Override
-	public void getFigureCirs() {
-		System.out.println("圆形面积："+Radius*2.0*Math.PI);
+	public double getFigureCirs() {
+		System.out.println("圆形面积：" + Radius * 2.0 * Math.PI);
+		return Radius * 2.0 * Math.PI;
 
 	}
 
@@ -40,7 +44,5 @@ public class Circular extends Graphical {
 	public String toString() {
 		return "Circular [Radius=" + Radius + ", getColor()=" + getColor() + ", isFill()=" + isFill() + "]";
 	}
-
-	
 
 }
